@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Stolzl Bold", Arial, sans-serif;
+}
+
+main video{ 
+    width: 100%;
+    object-fit: cover;
+    height: 95vh;
+}
