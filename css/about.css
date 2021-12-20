@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Stolzl Bold", Arial, sans-serif;
+    font-size: 16px;
+}
+
+#main{
+    width: 100%;
+}
+/*------------------------------    KAMPUS ALGEBRE  /*------------------------------*/
+#main > #algebraHQ{
+    background-image: url("/Materials/img/kampus-iz-zraka-min-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+}
+/*------------------------------    O NAMA UVODNI DIO  /*------------------------------*/
+
+#main > #oNama{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#main > #oNama h1{
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid gold;
+    font-size: 1.5em;
+}
+
+#main > #oNama h2{
+    color: brown;
+}
+
+/*------------------------------    NASE VRIJEDNOSTI  /*------------------------------*/
+
+#main > #naseVrijednosti > #nv1{
+    font-family: 'Twinkle Star', cursive;;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.25em;
+}
+
+#main > #naseVrijednosti > #nv1 div{
+    width: 50%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+#main > #naseVrijednosti > #nv1 div p:first-of-type{
+    margin-bottom: 2.5em;
+}
+
+#main > #naseVrijednosti > #nv2{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#main > #naseVrijednosti > #nv2 #nv2_1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+}
+#main > #naseVrijednosti > #nv2 #nv2_1 > .clanak{
+    padding: 0 20px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 2%;
+    width: 340px;
+} 
+
+#main > #naseVrijednosti > #nv2 #nv2_1 > .clanak h1{
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0
+}
+
+#main > #naseVrijednosti > #nv2 #nv2_1 > .clanak p{
+    text-align: justify;
+    line-height: 20px;
+}
+
+@media(max-width: 1200px) and (min-width: 768px){
+    #main > #naseVrijednosti > #nv2 #nv2_1{
+        width: 70%;
+    }
+    #main > #naseVrijednosti > #nv2 #nv2_1 > .clanak{
+        width: 180px;
+    }
+    #main > #naseVrijednosti > #nv2 #nv2_1 > .clanak p{
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 768px){
+    #main > #naseVrijednosti > #nv2 #nv2_1{
+        flex-direction: column;
+    }
+    #main > #naseVrijednosti > #nv2 #nv2_1 > .clanak{
+        margin-bottom: 25px;
+    }
+}
+
+/*
+    TODO:
+        - SREDITI ZA MOBITEL I TABLET CLANKE
+
+*/
+
+/*------------------------------    KAMPUS ALGEBRE  /*------------------------------*/
+

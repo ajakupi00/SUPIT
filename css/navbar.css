@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     font-size: 0.9em;
+    font-weight: bold;
 }
 
 #header > #logo{
@@ -17,7 +18,7 @@
 }
 
 #header > #logo img{
-    width: 50px;
+    width: 60px;
 }
 
 #header > #navbar{
@@ -52,6 +53,10 @@
 
     #header > #logo{
         width: 10%;
+    }
+
+    #header > #logo img{
+        width: 50px;
     }
 }
 

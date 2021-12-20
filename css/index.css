@@ -4,8 +4,46 @@ body{
     font-family: "Stolzl Bold", Arial, sans-serif;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main video{ 
     width: 100%;
     object-fit: cover;
     height: 95vh;
 }
+
+
+.slogan{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.slogan h1, .slogan h2
+{
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-shadow: 2px 0px 0px black;
+    margin: 0;
+    color: white;
+   
+}
+
+.slogan h1{
+    overflow: hidden;
+}
+
+.slogan h2{
+    margin-top: 10px;
+    color: rgb(202, 3, 3);
+    text-transform: uppercase;
+    
+}
+
