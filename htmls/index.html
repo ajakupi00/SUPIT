@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Arjan Jakupi">
@@ -10,7 +11,9 @@
     <link rel="stylesheet" href="/icons/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/kontakt.css">
 </head>
+
 <body>
     <div id="header">
         <div id="logo">
@@ -22,19 +25,46 @@
                 <li><i class="fas fa-comments"></i><a href="/htmls/about.html">O nama</a></li>
                 <li><i class="fas fa-info-circle"></i><a href="novosti.html">Novosti</a></li>
                 <li><i class="fas fa-info-circle"></i><a href="nplan.html">Nastavni plan</a></li>
-                <li><i class="fas fa-envelope"></i> <a href="kontakt.html">Kontakt</a></li>
+                <li><i class="fas fa-envelope"></i><a href="#" id="kontakt_btn" onclick="pokaziModal()">Kontakt</a></li>
             </ul>
         </div>
         <div id="empty"></div>
     </div>
     <main>
-       <video autoplay>
-           <source src="/Materials/video/typingOnlaptop.mp4" type="video/mp4">
-       </video>
-       <div class="slogan">
-           <!--Dodati slogan-->
-           
+        <video autoplay>
+            <source src="/Materials/video/typingOnlaptop.mp4" type="video/mp4">
+        </video>
+        <div class="slogan">
+            <!--Dodati slogan-->
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
+                <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                    <label for="name">Puno ime:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="importance">Važnost poruke:</label>
+                    <select name="importance" id="importance">
+                        <option value="niska">Niska</option>
+                        <option value="visoka">Visoka</option>
+                    </select>
+                    <label for="message">Vaša poruka:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <div id="news">
+                        <label for="newsletter">Primaj newsletter:</label>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                    </div>
+                    <div class="tipke">
+                        <button type="submit">Pošalji</button>
+                        <button type="reset" onclick="Odustani()">Odustani</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </body>
+<script src="/js/kontakt.js"></script>
+
 </html>

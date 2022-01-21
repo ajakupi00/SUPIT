@@ -1,0 +1,93 @@
+ #mainNaslov{
+    width: 60%;
+    margin: auto;
+}
+
+#mainNaslov h1{
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid gold;
+    letter-spacing: -1px;
+}
+
+main{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    height: 450px;
+}
+
+.clanci{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.clanak{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid rgb(233, 233, 233);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.333);
+}
+
+.clanak-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    border: none;
+}
+
+.clanak-naslov{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+}
+
+.clanak-naslov h1{
+    color: yellow;
+    font-size: 1.5em;
+}
+
+.clanak-opis{
+    font-weight: bold;
+}
+
+@media(max-width: 1200px) and (min-width: 768px){
+    .clanci{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        height: fit-content;
+    }
+    .clanci{
+        padding: 25px 0;
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+
+
