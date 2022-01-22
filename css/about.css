@@ -12,7 +12,7 @@ body{
 }
 /*------------------------------    KAMPUS ALGEBRE  /*------------------------------*/
 #main > #algebraHQ{
-    background-image: url("/Materials/img/kampus-iz-zraka-min-1.jpg");
+    background-image: url("../Materials/img/kampus-iz-zraka-min-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

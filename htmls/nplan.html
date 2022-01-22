@@ -10,8 +10,11 @@
 
     <link rel="stylesheet" href="../icons/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/kontakt.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nplan.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -38,12 +41,19 @@
         <div id="empty"></div>
       </div>
     <main>
-        <video autoplay>
-            <source src="../Materials/video/typingOnlaptop.mp4" type="video/mp4">
-        </video>
-        <div class="slogan">
-            <!--Dodati slogan-->
+        <div id="nplan-naslov">
+            <h1 class="naslov">Nastavni plan</h1>
         </div>
+
+        <div id="unos">
+            <label for="search">Naziv kolegija:</label>
+            <button id="search">Button</button>
+            <!-- <input type="text" name="naziv" id="search" placeholder="Unesite naziv kolegija"> -->
+            <div class="container">
+              
+            </div>
+        </div>
+
         <div class="modal">
             <div class="modal-content">
                 <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
@@ -70,8 +80,14 @@
                 </form>
             </div>
         </div>
+        <footer>
+            <h1>Budi izvrstan u onome što voliš</h1>
+            <h2>Zaiskri</h2>
+        </footer>
     </main>
+
 </body>
 <script src="../js/kontakt.js"></script>
+<script src="../js/kolegjii.js"></script>
 
 </html>
