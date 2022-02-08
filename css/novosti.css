@@ -24,6 +24,7 @@ main{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    animation: 1s ease-in povecanje;
 }
 
 .clanak{
@@ -87,6 +88,17 @@ main{
         flex-wrap: wrap;
         row-gap: 10px;
     }
+}
+
+@keyframes povecanje {
+    0%{
+        transform: scale(0.1, 0.1);
+    }
+    
+    100%{
+        transform: scale(1, 1);
+    }
+    
 }
 
 

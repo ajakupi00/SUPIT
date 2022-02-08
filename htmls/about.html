@@ -13,39 +13,44 @@
   <link rel="stylesheet" href="../css/about.css" />
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/kontakt.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 </head>
 
 <body>
-  <div id="header">
-    <div id="logo">
-      <img src="../Materials/img/Algebra-logo.png" alt="Algebra logo" />
-    </div>
-    <div id="navbar">
-      <ul>
-        <li><i class="fas fa-home"></i><a href="../htmls/index.html">Pocetna</a></li>
-        <li>
-          <i class="fas fa-comments"></i><a href="../htmls/about.html">O nama</a>
-        </li>
-        <li>
-          <i class="fas fa-info-circle"></i><a href="../htmls/novosti.html">Novosti</a>
-        </li>
-        <li>
-          <i class="fas fa-info-circle"></i><a href="../htmls/nplan.html">Nastavni plan</a>
-        </li>
-        <li>
-          <i class="fas fa-envelope"></i> <a href="#" onclick="pokaziModal()">Kontakt</a>            </li>
-      </ul>
-    </div>
-    <div id="empty"></div>
-  </div>
-
+ 
   <div id="main">
+    <div id="header">
+      <div id="logo">
+        <img src="../Materials/img/Algebra-logo.png" alt="Algebra logo" />
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><i class="fas fa-home"></i><a href="../htmls/index.html">Pocetna</a></li>
+          <li>
+            <i class="fas fa-comments"></i><a href="../htmls/about.html">O nama</a>
+          </li>
+          <li>
+            <i class="fas fa-info-circle"></i><a href="../htmls/novosti.html">Novosti</a>
+          </li>
+          <li>
+            <i class="fas fa-info-circle"></i><a href="../htmls/nplan.html">Nastavni plan</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i> <a href="#" onclick="pokaziModal()">Kontakt</a>            </li>
+        </ul>
+      </div>
+      <div id="empty"></div>
+    </div>
+  
     <div id="algebraHQ"></div>
     <section id="oNama">
       <h1 class="naslov">O nama</h1>
-      <h2 class="podnaslov"><i class="fas fa-bolt"></i> Naše vrijednosti</h2>
     </section>
     <section id="naseVrijednosti">
+      <h2 class="podnaslov"><i class="fas fa-bolt"></i> Naše vrijednosti</h2>
       <div class="tip1">
         <div>
           <p>Obećajemo pomoć u pronalasku onoga što voliš raditi i da ćemo te poticati na izvrsnost - kvalitetom
@@ -320,7 +325,7 @@
       </div>
     </section>
     <section id="doNas">
-      <h2 class="podnaslov"><i class="far fa-compass"></i> Kako do nas?</h2>
+      <h2 class="podnaslov"><i class="far fa-compass"></i> Kako do nas</h2>
       <div id="kdn">
         <div class="kdn_con">
           <div class="kdn_p">
@@ -403,5 +408,6 @@
   </div>
 </body>
 <script src="../js/kontakt.js"></script>
+<script src="../js/podnaslovi.js"></script>
 
 </html>

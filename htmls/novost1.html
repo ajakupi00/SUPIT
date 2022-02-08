@@ -15,6 +15,15 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/kontakt.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!--Fancybox-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
 </head>
 
 <body>
@@ -35,7 +44,8 @@
           <i class="fas fa-info-circle"></i><a href="../htmls/nplan.html">Nastavni plan</a>
         </li>
         <li>
-          <i class="fas fa-envelope"></i> <a href="#" onclick="pokaziModal()">Kontakt</a>            </li>
+          <i class="fas fa-envelope"></i> <a href="#" onclick="pokaziModal()">Kontakt</a>
+        </li>
       </ul>
     </div>
     <div id="empty"></div>
@@ -67,10 +77,11 @@
         16.mjestu u vještini IT Software Solutions for Business.</p>
       <div class="img_con">
         <div class="slike">
-          <a href="../Materials/img/Novost1/galerija1.jpg" target="_self"><img src="../Materials/img/galerija1.jpg"
+          <a data-fancybox="gallery-1" href="../Materials/img/galerija1.jpg"><img src="../Materials/img/galerija1.jpg"
               alt="Slika galerija1"></a>
-          <a href="../Materials/img/galerija2.jpg" target="_self" contextmenu=""><img src="../Materials/img/galerija2.jpg"
+          <a data-fancybox="gallery-1" href="../Materials/img/galerija2.jpg"><img src="../Materials/img/galerija2.jpg"
               alt="Slika galerija2"></a>
+
         </div>
         <div class="video">
           <video src="../Materials/video/worldskills.mp4" controls></video>
@@ -100,14 +111,18 @@
         <div id="news">
           <label for="newsletter">Primaj newsletter:</label>
           <input type="checkbox" name="newsletter" id="newsletter">
-      </div>
+        </div>
+        <div class="tipke">
           <button type="submit">Pošalji</button>
           <button type="reset" onclick="Odustani()">Odustani</button>
         </div>
       </form>
     </div>
   </div>
+  </div>
 </body>
 <script src="../js/kontakt.js"></script>
 <script src="../js/novost.js"></script>
+<script src="../js/carousel.js"></script>
+
 </html>

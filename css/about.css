@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
 
+*{
+    scroll-margin-top: 100px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -10,14 +14,42 @@ body{
 #main{
     width: 100%;
 }
+
+/*------------------------------    ANIMACIJE  /*------------------------------*/
+@keyframes odGorePremaDole{
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes odDolePremaGore{
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 /*------------------------------    KAMPUS ALGEBRE  /*------------------------------*/
+
+
 #main > #algebraHQ{
     background-image: url("../Materials/img/kampus-iz-zraka-min-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 45vh;
+    animation: 1s ease-out 0s 1 odGorePremaDole;
 }
+
+
 /*------------------------------    O NAMA UVODNI DIO  /*------------------------------*/
 
 #main > #oNama{
@@ -30,9 +62,9 @@ body{
     margin-bottom: 2em;
     padding-bottom: 1em;
     border-bottom: 2px solid gold;
-    font-size: 1.5em;
+    font-size: 2.25em;
+    animation: 0.75s ease-out 0s 1 odDolePremaGore;
 }
-
 .podnaslov{
     color: brown;
     text-align: center;

@@ -7,8 +7,6 @@ main{
 main > #naslov{
     padding: 0;
     margin: 0;
-
-    /*OVO TREBA SE MIJENJATI SA JAVASCRIPTOM*/
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +15,8 @@ main > #naslov{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: 0.85s ease-in-out odGorePremaDole;
 }
 
 
@@ -30,6 +30,15 @@ main > #naslov h1{
    margin: 0;
    color: white;
    text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 768px){
+    main > #naslov > #naslovContainer{
+        width: 70%;
+    }
+    main > #naslov h1{
+        font-size: 1.2em;
+    }
 }
 
 /*------------------------------    CONTENT      ------------------------------*/
@@ -74,10 +83,11 @@ main > #naslov h1{
 }
 
 .img_con > .slike a img{
-    width: 100%;
     opacity: 0.75;
+    width: 100%;
     border-radius: 5px;
 }
+
 
 .img_con > .video{
     display: flex;
@@ -87,5 +97,54 @@ main > #naslov h1{
 
 .img_con > .video video{
     width: 100%;
-    obj
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .img_con {
+        /*WIDTH JE 621px*/
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .img_con {
+        /*WIDTH JE 621px*/
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .img_con > .slike{
+        margin-bottom: 20px;
+    }
+    
+    .img_con > .slike a{
+        width: 100%;
+    }
+}
+
+
+/*------------------------------    ANIMACIJE      ------------------------------*/
+
+@keyframes odGorePremaDole{
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes odDolePremaGore{
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

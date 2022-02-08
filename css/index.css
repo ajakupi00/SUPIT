@@ -14,6 +14,7 @@ main video{
     width: 100%;
     object-fit: cover;
     height: 95vh;
+    margin-top: 80px;
 }
 
 
@@ -26,9 +27,9 @@ main video{
     margin-right: auto;
     width: fit-content;
 }
-.slogan h1, .slogan h2
+.slogan h1, .slogan p
 {
-    font-size: 3em;
+    font-size: 5em;
     letter-spacing: 3px;
     text-shadow: 2px 0px 0px black;
     margin: 0;
