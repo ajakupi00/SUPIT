@@ -1,3 +1,10 @@
+body{
+    height: fit-content;
+}
+main{
+    height: 60vh;
+}
+
 #nplan-naslov{
     font-size: 2em;
     width: 50%;
@@ -20,7 +27,8 @@
 }
 
 #unos{
-    flex: 1;    
+    flex: 1;   
+    height: max-content; 
 }
 
 #nazivKolegija{
@@ -33,12 +41,19 @@
     width: 80%;
     font-size: 0.8em;
     padding: 6px;
+    border-radius: 5px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+#unos input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #007FD1;
 }
 
 
 #tablica{
     flex: 1;
-    height: 50px;
+    height: fit-content;
 }
 
 table{
@@ -91,3 +106,27 @@ td, th {
 table tbody tr:nth-child(odd) {
     background-color: #f1f1f1;
   }
+
+
+  @media(max-width: 1200px){
+      main{
+          height: max-content;
+      }
+    #nplan-naslov {
+        padding-top: 50px;
+    }
+    #nplan-content{
+        margin-bottom: 50px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+  }
+
+@media(max-width: 768px){
+    #tablica table{
+        font-size: .8em;
+    }
+}

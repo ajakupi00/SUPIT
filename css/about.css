@@ -90,7 +90,7 @@ body{
 
 .tip2{
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .tip2 .tip2_1{
@@ -220,6 +220,7 @@ body{
     .licenca{
        width: 30%;
     }
+
 }
 
 @media screen and (max-width: 768px){
@@ -231,6 +232,15 @@ body{
     .licenca{
         width: 45%;
         margin: auto;
+    }
+
+    .licenca img{
+        width: 150px;
+    
+    }
+    
+    .licenca .smlImg{
+        width: 80px;
     }
 
 }

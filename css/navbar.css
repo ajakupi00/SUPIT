@@ -89,19 +89,24 @@
 
 /*----------------------    ZA TABLETE  ---------------------*/ 
 @media(max-width: 1200px) and (min-width: 768px){
+    #header{
+        flex-direction: column;
+        height: fit-content;
+    }
 
     #header > #logo img{
         width: 40px;
+        padding-bottom: 10px;
     }
 
     #header > #navbar{
-        width: 50%;
+        width: 70%;
+        text-align: center;
     }
 
     #header > #empty{
         margin:auto;
-        width: 30%;
-        font-size: 0.95em;
+        width: 60%;
     }
     
     #header > #empty ul{
@@ -124,7 +129,7 @@
 
 @media (max-width: 768px){
     #header{
-        font-size: 0.75em;
+        font-size: 0.85em;
         flex-direction: column;
         height: fit-content;
     }

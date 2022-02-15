@@ -1,4 +1,3 @@
-//Kad selecta, dohvati podatke o kolegiji i onda ga ubaci u tablicu
 $(function () {
 
   
@@ -40,7 +39,6 @@ function insertIntoTable(id, kolegij, ects, predavanja, sati, vjezbe, tip) {
 
   $(`#btn-${id}`).click(function () {
     const id = $(this).prop('id');
-    console.log("before ajax");
     console.log(this);
 
 

@@ -1,5 +1,3 @@
-
-
 var modalbox = document.getElementsByClassName("modal")[0];
 var modal_setting = modalbox.style.display;
 var forma = document.getElementsByTagName("form")[0];
@@ -10,7 +8,7 @@ function pokaziModal() {
 }
 
 function Odustani() {
-    modal_setting = "";
+    modal_setting = "none";
     modalbox.style.display = modal_setting;
 }
 

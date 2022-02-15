@@ -47,6 +47,7 @@ main > #naslov h1{
 .content{
     width: 70%;
     margin: auto;
+    padding-block: 30px;
 }
 
 .naslov{
@@ -100,6 +101,10 @@ main > #naslov h1{
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px){
+    main > #naslov{
+        margin-top: 100px;
+        padding-top: 50px;
+    }
     .img_con {
         /*WIDTH JE 621px*/
         width: 90%;
@@ -111,6 +116,10 @@ main > #naslov h1{
 }
 
 @media screen and (max-width: 768px){
+    main > #naslov{
+        margin-top: 75px;
+        padding-top: 25px;
+    }
     .img_con {
         /*WIDTH JE 621px*/
         display: flex;

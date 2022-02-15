@@ -1,8 +1,9 @@
-var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    speed: 40
-});
+var options = {
+    strings: ['Budi izvrstan u onome što vidiš!', 'Budi izvrstan u onome što voliš.', 'Budi izvrstan u onome što voliš.<br><span id="zaiskri">zaiskri</span>.'],
+    typeSpeed: 100,
+    loop: true,
+    startDelay: 100
+  };
+  
+  var typed = new Typed('#typed', options);
 
-var glagoli = new Typed('#glagoli', {
-    stringsElement: ['vidiš', 'oliš']
-});
